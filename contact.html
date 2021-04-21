@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- navbar link -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/contact.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pb-4 pt-4">
+        <a href="#" class="navbar-brand">Double RJ'S<b> Motorcycle Corporation</b></a>  		
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+            <div class="navbar-nav">
+                <a href="./home.php" class="nav-item nav-link">Home</a>
+                <a href="./about.php" class="nav-item nav-link">About</a>			
+                <a href="#" class="nav-item nav-link active">Pricing</a>
+                <a href="./crud.php" class="nav-item nav-link">Retrieve</a>
+                <a href="./contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <form class="navbar-form form-inline search-form">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default"><i class="fa fa-search"></i></button>
+                    </span>
+                </div>
+            </form>
+            <div class="navbar-nav ml-auto">
+                <div class="nav-item dropdown login-dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle"><i class="fa fa-user-o"></i> Login</a>
+                    <div class="dropdown-menu">					
+                        <form class="form-inline login-form" action="/examples/actions/confirmation.php" method="post">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <span class="fa fa-user"></span>
+                                    </span>                    
+                                </div>
+                                <input type="text" class="form-control" placeholder="Username" required>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-lock"></i>
+                                    </span>                    
+                                </div>
+                                <input type="text" class="form-control" placeholder="Password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                    </div>
+                </div>			
+            </div>
+        </div>
+    </nav>
+
+<br>
+<br>
+
+    <div class="container"> <!-- Content container -->
+
+        <!-- Page Title -->
+        <section class="title">
+          <div class="row-break">
+            <div class="col c" style='margin-right: 3rem;'>
+              <h1><i class="fas fa-universal-access fa-2x"></i></h1>
+            </div>
+            <div class="col b">
+              <h1>The News Letter</h1>
+              <h2>A Company's Monthly Newsletter</h2>
+            </div>
+          </div>
+        </section>
+        <!-- End Page Title -->
+  
+        <!-- Section -->
+        <section class="">
+          <header>
+            <h2><i class="fas fa-universal-access"></i> Some Info <i class="fas fa-universal-access"></i></h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </header>
+          <div class="">
+            <h3>Section Subtitle</h3>
+            <ul class='toggleList'>
+              <li class='row' onclick="togglePara(this)">
+                <div class='toggle-icon'>
+                  <i class="fas fa-angle-right"></i>
+                </div>
+                <div class="li-content flex1">
+                  <p>Click Me!</p>
+                  <div class="paragraph para-closed">
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <h3>Another Section Subtitle</h3>
+            <ul class='toggleList'>
+              <li class='row' onclick="togglePara(this)">
+                <div class='toggle-icon'>
+                  <i class="fas fa-angle-right"></i>
+                </div>
+                <div class="li-content flex1">
+                  <p>I Expand!</p>
+                  <div class="paragraph para-closed">
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class='row' onclick="togglePara(this)">
+                <div class='toggle-icon'>
+                  <i class="fas fa-angle-right"></i>
+                </div>
+                <div class="li-content flex1">
+                  <p>Secrets Are One Click Away...</p>
+                  <div class="paragraph para-closed">
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class='row' onclick="togglePara(this)">
+                <div class='toggle-icon'>
+                  <i class="fas fa-angle-right"></i>
+                </div>
+                <div class="li-content flex1">
+                  <p>Click It, Baby!</p>
+                  <div class="paragraph para-closed">
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="callout">
+            <p>Here's some highlighted text so the user doesn't miss it... And a <a href='#' target='_blank'>Link</a>.</p>
+          </div>
+        </section>
+        <!-- End Section -->
+  
+        <!-- Section -->
+        <section>
+          <header>
+            <h2><i class="fas fa-universal-access"></i> Another Section <i class="fas fa-universal-access"></i></h2>
+          </header>
+          <div class="row-break">
+            <div class="border block">
+              <h3>Testimonial Quotes</h3>
+              <div class="quote">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <p>- Some person</p>
+              </div>
+              <div class="quote">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <p>- Random person</p>
+              </div>
+              <div class="quote">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <p>- Crazy person</p>
+              </div>
+            </div>
+            <div class="border block">
+              <h3>Some Charts</h3>
+              <div class="charts row wrap row-space-between">
+                <img src="https://cdn-images-1.medium.com/max/1600/1*Eq40iwcboRFBMF37oAaM7Q.png" alt="chart1">
+                <img src="https://cdn-images-1.medium.com/max/1600/1*0JKExPT7qVu_I0OGz2zGAA.png" alt="chart2">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Section -->
+  
+        <!-- Section -->
+        <section>
+          <head>
+            <h2><i class="fas fa-universal-access"></i> Another Section Title <i class="fas fa-universal-access"></i></h2>
+          </head>
+          <div class="">
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non porttitor eros. Vivamus non mauris fermentum purus vehicula volutpat eu in nisi. Sed consectetur lorem purus,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non porttitor eros. Vivamus non mauris fermentum purus vehicula volutpat eu in nisi. Sed consectetur lorem purus,</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non porttitor eros. Vivamus non mauris fermentum purus vehicula volutpat eu in nisi. Sed consectetur lorem purus,</li>
+            </ul>
+          </div>
+        </section>
+        <!-- End Section -->
+  
+        <!-- Contact Section -->
+        <section>
+          <header>
+            <h2><i class="fas fa-universal-access"></i> Contact Us <i class="fas fa-universal-access"></i></h2>
+          </header>
+          <h3>Need more info?</h3>
+          <div class="row-break">
+            <div class="contact row block flex1">
+              <div class="contact-photo" style="background-image: url('http://photos1.blogger.com/blogger/3406/1317/320/Sock%20Monkey%20Portrait.jpg');"></div>
+              <div class="contact-details">
+                <p>Name of Person</p>
+                <p>Position</p>
+                <p><i class="fas fa-envelope"></i> <a href='mailto: email@hello.com'>email@hello.com</a></p>
+              </div>
+            </div>
+            <div class="contact row block flex1">
+              <div class="contact-photo" style="background-image: url('https://i.etsystatic.com/5218822/c/720/571/0/12/il/e2d574/1657989469/il_680x540.1657989469_t5he.jpg');"></div>
+              <div class="contact-details">
+                <p>Name of Person</p>
+                <p>Position</p>
+                <p><i class="fas fa-envelope"></i> <a href='mailto: email@hello.com'>email@hello.com</a></p>
+              </div>
+            </div>
+            <div class="contact row block flex1">
+              <div class="contact-photo" style="background-image: url('https://thumbs.dreamstime.com/z/sock-monkey-layout-close-shot-playing-peek-boo-their-hand-covering-its-eyes-43124023.jpg');"></div>
+              <div class="contact-details">
+                <p>Name of Person</p>
+                <p>Position</p>
+                <p><i class="fas fa-envelope"></i> <a href='mailto: email@hello.com'>email@hello.com</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Contact Section -->
+      </div> <!-- End Content Container -->		
+
+
+      
+</body>
+</html>
